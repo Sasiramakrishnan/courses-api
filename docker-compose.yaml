@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app1:
+    image: sasiramakrishnan/courses-api:latest  # Replace with your image
+    container_name: spring-app-1
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+
